@@ -1,32 +1,35 @@
-function operate(command, a, b){
-    if (command = '+'){
-        return add();
-    } else if (command = '-'){
-        return subtract();
-    } else if (command = 'division'){
-        return divide();
-    } else(command = '*')
-        return multiply();
-    
-}
-
-function add(a,b){
-    return (a+b);
+function add (a,b){
+     addedNum = a+b
+     return addedNum
 }
 
 function subtract(a,b){
-    return(a-b);
+    minusedNum = a-b;
+    return minusedNum
 }
 
 function multiply (a,b){
-    return (a*b);
+    multipliedNum = (a*b);
+    return multipliedNum
 }
 
 function divide (a,b){
-    return (a/b);
+    dividedNum = (a/b);
+    return dividedNum
 }
 
-operate();
+function operate(command, a, b){
+    if (command === '+'){
+       result = add(a,b);
+    } else if (command === '-'){
+       result = subtract(a,b);
+    } else if (command === '/'){
+        result =  divide(a,b);
+    } else if (command === '*') {
+        result = multiply(a,b);
+    }
+    return result
+}
 
-console.log(operate('-', 2,8));
+
 
